@@ -111,6 +111,12 @@ const contractConfig = {
 };
 ```
 
+## 🌐 Live Preview
+
+Check out the deployed version of the dApp here:  
+👉 [https://buy-me-a-coffee1.netlify.app](https://buy-me-a-coffee1.netlify.app)
+
+
 
 ### 📸 Screenshots
 
