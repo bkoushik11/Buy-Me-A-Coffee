@@ -66,39 +66,51 @@ sepolia: {
 
 
 ### 🦊 MetaMask Setup
-- Install MetaMask
 
-- Add Sepolia testnet (Chain ID: 11155111)
+- **Install MetaMask** (browser extension)
+- **Add Sepolia Testnet** (Chain ID: `11155111`)
+- **Get test ETH** from [Sepolia Faucet](https://faucet.sepolia.dev/)
+- **Connect your wallet** in the dApp by clicking **“Connect Wallet”**
 
-Get test ETH from Sepolia Faucet
 
-Connect wallet in the dApp
+## 💻 Frontend Setup (Local)
 
-### 💻 Frontend Setup (Local)
-
+```bash
 git clone https://github.com/bkoushik11/Buy-Me-A-Coffee.git
 cd Buy-Me-A-Coffee
 npm install
 npm run dev
-Visit: http://localhost:5173
+```
 
-Ensure .env or config file is set (if needed)
+- Visit: [http://localhost:5173](http://localhost:5173)  
+- Ensure `.env` or config file is set (if needed)
+
 
 ### 🔗 Connect Contract & ABI
-Open constants.js or config.js
 
-Set your deployed contract address:
+1. Open `constants.ts` or `config.ts`
+2. Set your deployed contract address:
+
+```js
 export const contractAddress = "0xYourContractAddress";
-Set your ABI:
+```
 
+3. Set your ABI:
+
+```js
 export const coffeeAbi = [/* ABI JSON */];
-Example Contract Config in Code
+```
 
+4. Example Contract Config in Code:
+
+```js
 const contractConfig = {
   address: "0xYourContractAddressHere",
   abi: CoffeeABI,
   chainId: 11155111 // Sepolia
 };
+```
+
 
 ### 📸 Screenshots
 🔌 Wallet Disconnected : 
@@ -110,26 +122,20 @@ const contractConfig = {
 
 
 ### 📋 To-Do / Future Features
- Basic ETH donation
 
- Add donor name/message support
+- ✅ Basic ETH donation  
+- 📝 Add donor name/message support  
+- 📃 Display recent donors  
+- 📱 Improve UI responsiveness  
+- 🌐 Multi-network support (Mainnet, Goerli)  
+- 🪙 Accept ERC-20 tokens  
+- 📊 Add withdrawal history for owner  
 
- Display recent donors
 
- Improve UI responsiveness
+### 📜 License & Author
 
- Multi-network support (Mainnet, Goerli)
+- **License:** MIT  
+- **Author:** [@bkoushik11](https://github.com/bkoushik11) — Solidity contract & frontend logic  
 
- Accept ERC-20 tokens
+> Feel free to fork, remix, and improve. Happy BUIDLing! ☕✨
 
- Add withdrawal history for owner
-
- Smart contract audit
-
-📜 License & Author
-License: MIT
-Author: @bkoushik11 — Solidity contract & frontend logic
-
-Feel free to fork, remix, and improve. Happy BUIDLing! ☕✨
-
-markdown
